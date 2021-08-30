@@ -29,13 +29,13 @@ export default {
     isActive() {
       return this.$route.path.indexOf(this.path) !== -1;
     },
-    activeStyle() {
-      return this.isActive ? { color: this.activeColor } : {};
-    },
   },
   methods: {
     itemClick() {
       this.$router.replace(this.path);
+    },
+    activeStyle() {
+      return this.isActive ? { color: this.activeColor } : {};
     },
   },
 };
