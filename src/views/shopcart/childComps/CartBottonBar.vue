@@ -114,7 +114,7 @@ export default {
   flex: 1;
 }
 .calculate {
-  background-color: red;
+  background-color: deeppink;
   text-align: center;
   width: 90px;
   color: #fff;

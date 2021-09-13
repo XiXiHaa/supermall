@@ -23,7 +23,7 @@
               ></use>
             </svg>
           </span>
-          <slot name="user-phone">暂无绑定手机号</slot>
+          <slot name="user-phone">123456789</slot>
         </div>
       </div>
       <svg data-v-735ff1be="" fill="#fff" class="arrow-svg right">

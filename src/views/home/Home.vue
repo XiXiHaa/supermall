@@ -161,6 +161,7 @@ export default {
         this.goods[type].page += 1;
 
         this.$refs.scroll.finishPullUp();
+        this.$refs.scroll.refresh();
       });
     },
   },
@@ -176,6 +177,7 @@ export default {
 .home-nav {
   background-color: var(--color-tint);
   color: #fff;
+  font-weight: 700;
 
   /* 在使用原生浏览器原生滚动时，为了让导航不跟随一起滚到
   position: fixed;

@@ -7,6 +7,11 @@ export default {
   addToCart(state, payload) {
     payload.checked = false
     state.cartList.push(payload)
-  }
-
+  },
+  addClick(state, payload) {
+    payload.count++
+  },
+  subClick(state, payload) {
+    payload.count--
+  },
 }

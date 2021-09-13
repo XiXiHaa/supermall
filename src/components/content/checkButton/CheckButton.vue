@@ -23,8 +23,8 @@ export default {
   border: 2px solid #aaa;
 }
 .check {
-  border-color: red;
-  background-color: red;
+  border-color: deeppink;
+  background-color: deeppink;
 }
 </style>
  if (this.$store.state.cartList.length === 0) {

@@ -14,7 +14,11 @@
       <div class="item-desc">商品描述: {{ itemInfo.desc }}</div>
       <div class="info-bottom">
         <div class="item-price left">¥{{ itemInfo.price }}</div>
-        <div class="item-count right">x{{ itemInfo.count }}</div>
+        <div class="item-count right">
+          <div @click="subClick">-</div>
+          <div>{{ itemInfo.count }}</div>
+          <div @click="addClick">+</div>
+        </div>
       </div>
     </div>
   </div>
@@ -39,6 +43,15 @@ export default {
   methods: {
     checkClick() {
       this.itemInfo.checked = !this.itemInfo.checked;
+    },
+    subClick() {
+      if (this.itemInfo.count !== 1) {
+        this.$store.commit("subClick", this.itemInfo);
+      }
+    },
+    addClick() {
+      // this.itemInfo.count++;
+      this.$store.commit("addClick", this.itemInfo);
     },
   },
 };
@@ -103,5 +116,12 @@ export default {
 
 .info-bottom .item-price {
   color: orangered;
+}
+.item-count {
+  display: flex;
+}
+.item-count div {
+  flex: 1;
+  padding: 5px;
 }
 </style>
