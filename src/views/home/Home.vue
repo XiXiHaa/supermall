@@ -74,7 +74,7 @@ export default {
       },
       currentType: "pop",
       isShowBackTop: false,
-      tabOffsetTop: 642,
+      tabOffsetTop: 0,
       isTabFixed: false,
       saveY: 0,
     };
