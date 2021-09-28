@@ -8,7 +8,7 @@ export const itemListenerMixin = {
     }
   },
   mounted() {
-    // 1.监听推荐中图片加载完成
+    // 1.监听推荐中图片加载完成 
 
     const refresh = debounce(this.$refs.scroll.refresh, 500);
     // 对监听的事件进行保存
